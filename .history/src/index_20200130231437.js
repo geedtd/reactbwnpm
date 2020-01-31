@@ -2,27 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const GrandChild = props => {
-    return (
-        <div>
-            <h3>Grandchild: {props.personData.grandChildName}</h3>
-        </div>
-    )
-}
-const Child = props => {
-    return (
-        <div>
-            <h2>Child: {props.personData.childName}</h2>
-            <GrandChild personData={props.personData}/>
-        </div>
-    )
-}
 
 const Parent = props => {
     return (
         <div>
-            <h1>Parent: {props.personData.parentName}</h1>
-            <Child personData={props.personData} />
+            Parent: {props.personData.parentName}
         </div>
     )
 };
