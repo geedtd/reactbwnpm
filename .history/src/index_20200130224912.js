@@ -5,12 +5,13 @@ import ReactDOM from 'react-dom';
 
 const siths = [{name: 'Darth Vader'}, {name: 'Palpatine'}];
 
-function App({ friends }) {
+function App(props) {
+    const friends = props.friends;
     return (
         <>
             <Greeter who={friends[0].name} />
             <Greeter who={friends[1].name} />
-            <ThingEnumerator thing='pals' count={friends.length * 3} />
+            <ThingEnumerator thing='dollars' count={300} />
         </>
     );
 }

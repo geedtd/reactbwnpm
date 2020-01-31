@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 
-const siths = [{name: 'Darth Vader'}, {name: 'Palpatine'}];
+const siths = [{name: 'Dart Vader'}, {name: 'Palpatine'}];
 
 export function sithGreeting(props) {
 

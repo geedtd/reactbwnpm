@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom';
 
 const siths = [{name: 'Darth Vader'}, {name: 'Palpatine'}];
 
-function App({ friends }) {
+function App(props) {
+    const friends = props.friends;
     return (
         <>
             <Greeter who={friends[0].name} />
